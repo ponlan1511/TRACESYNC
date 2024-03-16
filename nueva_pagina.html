@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Compra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar {
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        #product-info {
+            flex: 1;
+        }
+
+        #product-image {
+            flex: 1;
+        }
+
+        #color-selector {
+            margin-bottom: 20px;
+        }
+
+        .color-button {
+            margin-right: 8px;
+        }
+
+        #color-indicator {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        #action-buttons {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <!-- Puedes personalizar los enlaces según tu estructura de navegación -->
+            <a href="#inicio">Inicio</a>
+            <a href="#precios">Precios</a>
+            <a href="#modelos">Modelos</a>
+        </div>
+
+        <h1>TRACE SYNC</h1>
+        <h1 style="font-size: 18px;">STORE</h1>
+    </header>
+
+    <div id="content">
+        <div id="product-info">
+            <h1>Detalle de la Compra</h1>
+            <p>Nombre del producto: TraceWallet</p>
+            <p>Descripción: Dispositivo de localización en tiempo real del tamaño de una tarjeta de crédito...</p>
+            <!-- Puedes agregar más detalles sobre el producto y la compra aquí -->
+
+            <div id="action-buttons">
+                <button onclick="realizarCompra()">Realizar Compra</button>
+            </div>
+        </div>
+
+        <div id="product-image">
+            <!-- Aquí puedes mostrar una imagen del producto si lo deseas -->
+        </div>
+    </div>
+
+    <script>
+        function realizarCompra() {
+            // Lógica para procesar la compra
+            alert('¡Gracias por tu compra! Tu pedido ha sido procesado exitosamente.');
+        }
+    </script>
+</body>
+</html>
